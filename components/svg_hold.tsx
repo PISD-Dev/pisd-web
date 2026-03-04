@@ -46,3 +46,16 @@ export default function PISD_Logo(props: React.SVGProps<SVGSVGElement>) {
 }
 
 
+export  function Icon_PHP_donate(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg  viewBox="0 0 16 19" fill="none" {...props} xmlns="http://www.w3.org/2000/svg">
+      <path d="M13 1V2.882C13 3.567 13.387 4.194 14 4.5C14.613 4.806 15 5.433 15 6.118V15C15 15.7956 14.6839 16.5587 14.1213 17.1213C13.5587 17.6839 12.7956 18 12 18H4C3.20435 18 2.44129 17.6839 1.87868 17.1213C1.31607 16.5587 1 15.7956 1 15V6.118C1 5.433 1.387 4.806 2 4.5C2.613 4.194 3 3.567 3 2.882V1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M2 1H14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M6 14C6 13.4266 5.99988 12.2044 6.0001 11M6.0001 11C6.00033 9.70263 6.00106 7.42533 6.0001 7C6.0001 7 5.99997 6 6.5 6C7.00003 6 8.0001 6 8.0001 6C8.0001 6 9.0001 6 9.5001 6C10.0001 6 10.0001 7 10.0001 7V9.5C10.0001 9.5 10.0001 11 9.5001 11C9.0001 11 6.0001 11 6.0001 11Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+      <path d="M6 7H5" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+      <path d="M6 10H5" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+      <path d="M11 7H10" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+      <path d="M11 10H10" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+    </svg>
+  );
+}

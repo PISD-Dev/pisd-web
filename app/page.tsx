@@ -1,70 +1,150 @@
-
+import { Icon_PHP_donate } from "@/components/svg_hold";
+import { Button } from "@/components/ui/button";
+import { IconEmpathize } from "@tabler/icons-react";
+import ProjectDescriptionWidget, {
+  lorem,
+} from "../components/project_description";
 import Image from "next/image";
+import Link from "next/link";
+import NavBar from "@/components/navi_bar";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <div>
+    <main className="flex flex-col bg-white dark:bg-black sm:items-start">
+      <div className="flex flex-col w-full min-h-screen">
+        <NavBar />
+        <div className="bg-[#345995] text-white py-3 text-center text-2xl">
           Lorem Ipsum Dolor
         </div>
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
 
-      </main>
-    </div>
+        <div
+          className="relative flex-1 bg-cover bg-center "
+          style={{ backgroundImage: "url(/img/DSC_9692.JPG)" }}
+        >
+          <div className="absolute inset-0 bg-black/30"></div>
+
+          <div className="absolute z-10 h-full w-full content-end text-white p-10">
+            <div className="flex row gap-5 justify-center">
+              <Button className="bg-[#9B2242] hover:bg-[#741a32] text-md p-5">
+                <IconEmpathize /> Be a Volunteer
+              </Button>
+              <Button className="bg-[#F2CD00] text-black hover:bg-[#caac01] text-md p-5">
+                <Icon_PHP_donate /> Be a Donor
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-[#345995] text-white w-full px-20 py-3 flex flex-col items-center">
+        <div className="text-center text-xl font-bold">
+          君と相場がゾキュンドキュン走り出し。
+        </div>
+        <div className="flex flex-row  gap-5">
+          <ProjectDescriptionWidget
+            alt_text="Image of EDSA Monument"
+            description="これから先のもっと先を描いた地図はないんだろうか? 迷いはしないだろうか それでいいから そのままでいいから本はいらなかったものもソファも本も捨てよう Ooh hoo ah ah 町へ出よう"
+            imageLink="/img/edsa-monu.jpg"
+          />
+          <ProjectDescriptionWidget
+            alt_text="Philippine Flag"
+            description="火星へランデヴー普通の日々 普通のシンパシー僕が見たいのはふざけた嵐だけ"
+            imageLink="/img/flag.jpg"
+          />
+          <ProjectDescriptionWidget
+            alt_text="Image of a booth with the newspaper headline 'Marcos Flees'"
+            description="はらり 僕らもう息も忘れて瞬きさえ億劫さぁ 今日さえ明日過去に変わるただ風を待つ"
+            imageLink="/img/marcos-flees.jpg"
+          />
+          <ProjectDescriptionWidget
+            alt_text="Image of protest in the background with the camera focused on a man"
+            description={lorem}
+            imageLink="/img/protest.jpg"
+          />
+        </div>
+      </div>
+
+      <div className="grid grid-rows-2 w-full p-5 ">
+        <div className="grid grid-cols-2 text-center ">
+          <div className="flex flex-col  align items-center gap-3 p-5">
+            <div className="text-[#345995] font-bold text-lg">Lorem Ipsum</div>
+            <div className="flex gap-5 px-25">
+              <Image
+                src="/img/flag.jpg"
+                alt="placeholder"
+                objectFit="cover"
+                width={200}
+                height={200}
+                loading="lazy"
+                className="px-3 shrink-0"
+              />
+              <div className="flex-1 line-clamp-3 text-left">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col  align items-center gap-3 p-5">
+            <div className="text-[#345995] font-bold text-lg">
+              Featured Photos
+            </div>
+            <div className="flex gap-5">
+              <Image
+                src="/img/flag.jpg"
+                alt="placeholder"
+                objectFit="cover"
+                width={200}
+                height={200}
+                loading="lazy"
+              />
+              <Image
+                src="/img/flag.jpg"
+                alt="placeholder"
+                objectFit="cover"
+                width={200}
+                height={200}
+                loading="lazy"
+              />
+              <Image
+                src="/img/flag.jpg"
+                alt="placeholder"
+                objectFit="cover"
+                width={200}
+                height={200}
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="grid grid-cols-2 text-center ">
+          <div className="flex flex-col  align items-center gap-3 p-5">
+            <div className="text-[#345995] font-bold text-lg">About Us</div>
+            <div className="text-left">
+              The Philippine Institute for Student Democracy (PISD) Inc. is a
+              SEC-registered, non-stock, non-profit, and non-partisan research
+              institute that promotes and protects students&apos; democratic
+              rights and freedoms and advances student democracy.
+            </div>
+            <Button
+              asChild
+              variant="default"
+              size="sm"
+              className="bg-[#345995] text-white hover:bg-[#2a4777] text-md"
+            >
+              <Link href="about_us">Learn More </Link>
+            </Button>
+          </div>
+          <div className="flex flex-col  align items-center gap-3 p-5">
+            <div className="text-[#345995] font-bold text-lg">
+              Let&apos;s Connect
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   );
 }
