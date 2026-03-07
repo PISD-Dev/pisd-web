@@ -18,7 +18,7 @@ export default function NavBar() {
         <MenuItem name="About Us" href="/about_us" />
         <MenuItem name="What We Do" href="/what_we_do" />
         <MenuItem name="Where We Work" href="/where_we_work" />
-        <MenuItem name="Contact Ue" href="/contact_us" />
+        <MenuItem name="Contact Us" href="/contact_us" />
       </nav>
     </div>
   );
