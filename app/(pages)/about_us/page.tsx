@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import OrgChartWidget from "../../../components/orgchart_widget";
 
-export default function Home() {
+export default function AboutUs() {
   return (
     <main className="flex flex-col min-h-screen   items-center  bg-white dark:bg-black sm:items-start">
       <div className="bg-[#345995] w-full text-white py-3 text-center text-2xl">
