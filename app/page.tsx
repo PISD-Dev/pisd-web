@@ -25,10 +25,10 @@ export default function Home() {
 
           <div className="absolute z-10 h-full w-full content-end text-white p-10">
             <div className="flex row gap-5 justify-center">
-              <Button className="bg-[#9B2242] hover:bg-[#741a32] text-md p-5">
+              <Button className="rounded-4xl bg-[#9B2242] hover:bg-[#741a32] text-md p-5">
                 <IconEmpathize /> Be a Volunteer
               </Button>
-              <Button className="bg-[#F2CD00] text-black hover:bg-[#caac01] text-md p-5">
+              <Button className="rounded-4xl bg-[#F2CD00] text-black hover:bg-[#caac01] text-md p-5">
                 <Icon_PHP_donate /> Be a Donor
               </Button>
             </div>
