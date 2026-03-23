@@ -4,15 +4,13 @@ import PISD_Logo from "./svg_hold";
 
 export default function NavBar() {
   return (
-    <div className="flex gap-5 p-5 px-10 items-center">
-      <div>
-        <Link href="/">
-          <PISD_Logo
-            width={300}
-            className="text-[#345995] dark:text-white cursor-pointer"
-          />
-        </Link>
-      </div>
+    <div className="hidden md:flex    flex-row gap-5 p-5 px-10 items-center ">
+      <Link href="/">
+        <PISD_Logo
+          width={300}
+          className="text-[#345995] dark:text-white cursor-pointer"
+        />
+      </Link>
       <nav className="flex gap-6 px-10  text-[#345995] dark:text-white ">
         <MenuItem name="Home" href="/" />
         <MenuItem name="About Us" href="/about_us" />

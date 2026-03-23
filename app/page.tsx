@@ -7,11 +7,13 @@ import ProjectDescriptionWidget, {
 import Image from "next/image";
 import Link from "next/link";
 import NavBar from "@/components/navi_bar";
+import NavSideBar from "@/components/navi_side_bar";
 
 export default function Home() {
   return (
     <main className="flex flex-col bg-white dark:bg-black sm:items-start">
       <div className="flex flex-col w-full min-h-screen">
+        
         <NavBar />
         <div className="bg-[#345995] text-white py-3 text-center text-2xl">
           Lorem Ipsum Dolor
