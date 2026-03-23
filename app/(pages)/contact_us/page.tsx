@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { IconMail } from "@tabler/icons-react";
 import Link from "next/link";
 
-export default function WhereWeWork() {
+export default function ContactUs() {
   return (
     <main className="flex flex-col min-h-screen   items-center  bg-white dark:bg-black sm:items-start">
       <div className="bg-[#345995] w-full text-white py-3 text-center text-2xl">
@@ -38,7 +38,7 @@ export default function WhereWeWork() {
             <IconMail size={40}/> info@pisd.org.ph
           </Link>
         </div>
-        <div className="flex justify-center border">
+        <div className="flex justify-center ">
           <ContactUsForm />
         </div>
       </div>
