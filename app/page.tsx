@@ -13,9 +13,9 @@ export default function Home() {
   return (
     <main className="flex flex-col bg-white dark:bg-black sm:items-start">
       <div className="flex flex-col w-full min-h-screen">
-        
+        <NavSideBar />
         <NavBar />
-        <div className="bg-[#345995] text-white py-3 text-center text-2xl">
+        <div className="bg-[#345995] text-white py-2 text-center text-xl md:py-3 md-">
           Lorem Ipsum Dolor
         </div>
 
@@ -26,7 +26,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/30"></div>
 
           <div className="absolute z-10 h-full w-full content-end text-white p-10">
-            <div className="flex row gap-5 justify-center">
+            <div className="flex flex-col md:flex-row gap-5 justify-center">
               <Button className="rounded-4xl bg-[#9B2242] hover:bg-[#741a32] text-md p-5">
                 <IconEmpathize /> Be a Volunteer
               </Button>
@@ -150,3 +150,5 @@ export default function Home() {
     </main>
   );
 }
+
+
