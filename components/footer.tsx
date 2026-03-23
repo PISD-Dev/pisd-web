@@ -12,55 +12,70 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-amber-50 p-5 flex flex-col gap-5 ">
-      <div className="my-auto text-[#345995]  dark:text-white">
+    <footer className="bg-amber-50 p-5 px-8 flex flex-col gap-5 md:px-20 md:py-10 text-[#345995]  dark:text-white">
+      <div className="my-auto ">
         <PISD_Logo width={300} className="" />
       </div>
-      <div className="flex items-start flex-col gap-3 py-2 ">
-        <FooterMenuItem name="Home" href="/" />
-        <FooterMenuItem name="About Us" href="/about_us" />
-        <FooterMenuItem name="What We Do" href="/what_we_do" />
-        <FooterMenuItem name="Where We Work" href="/where_we_work" />
-        <FooterMenuItem name="Contact Us" href="/contact_us" />
-      </div>
-      <div className=" text-[#697c9d] flex flex-col gap-2 pt-10">
-        <div className="font-bold">Follow us:</div>
-        <div className="flex flex-row gap-2">
-          <a
-            href="https://www.facebook.com/pisdofficial"
-            target="_blank"
-            rel="noopener noreferrer"
+      <div className="md:gap-10 md:grid md:grid-cols-[2fr_3fr_1fr]  lg:grid-cols-[1.5fr_3fr_1fr]">
+        <div className="pb-10 flex flex-col gap-5">
+          <div className="font-bold md:text-lg lg:text-xl ">
+            Philippine Insititute for Student Democracy (PISD) Inc.
+          </div>
+          <Link
+            href={"/about"}
+            className="hover:underline text-[#345995]  dark:text-white"
           >
-            <IconBrandFacebook className="group-hover:hidden" />
-            <IconBrandFacebookFilled
-              stroke={1.5}
-              className="hidden  group-hover:inline group-hover:scale-125 transition-transform"
-            />
-          </a>
-          <a
-            href="mailto:info@pisd.org.ph"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <IconMail className="group-hover:hidden" />
-            <IconMailFilled
-              stroke={1.75}
-              className="hidden  group-hover:inline group-hover:scale-125 transition-transform"
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com/company/pisdofficial/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <IconBrandLinkedin className="group-hover:hidden" />
-            <IconBrandLinkedinFilled
-              stroke={1.75}
-              className="hidden  group-hover:inline group-hover:scale-125 transition-transform"
-            />
-          </a>
+            About the PISD&apos;s Mission
+          </Link>
+        </div>
+
+        <div className="flex flex-col md:bg-amber-300 items-start gap-3 py-2 md:grid md:grid-rows-4 md:grid-flow-col md:gap-2 lg:gap-x-10 md:auto-cols-max md:justify-start">
+          <FooterMenuItem name="Home" href="/" />
+          <FooterMenuItem name="About Us" href="/about_us" />
+          <FooterMenuItem name="What We Do" href="/what_we_do" />
+          <FooterMenuItem name="Where We Work" href="/where_we_work" />
+          <FooterMenuItem name="Contact Us" href="/contact_us" />
+        </div>
+        <div className="  text-[#697c9d] flex flex-col gap-2 pt-10 md:items-center justify-center md:justify-start md:pt-0">
+          <div className="font-bold">Follow us:</div>
+          <div className="flex flex-row gap-2">
+            <a
+              href="https://www.facebook.com/pisdofficial"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IconBrandFacebook className="group-hover:hidden" />
+              <IconBrandFacebookFilled
+                stroke={1.5}
+                className="hidden  group-hover:inline group-hover:scale-125 transition-transform"
+              />
+            </a>
+            <a
+              href="mailto:info@pisd.org.ph"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IconMail className="group-hover:hidden" />
+              <IconMailFilled
+                stroke={1.75}
+                className="hidden  group-hover:inline group-hover:scale-125 transition-transform"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/pisdofficial/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IconBrandLinkedin className="group-hover:hidden" />
+              <IconBrandLinkedinFilled
+                stroke={1.75}
+                className="hidden  group-hover:inline group-hover:scale-125 transition-transform"
+              />
+            </a>
+          </div>
         </div>
       </div>
+
       {/*<Separator className="text-[#345995]"/>
       <div>
         Privacy Policy
@@ -72,7 +87,7 @@ function FooterMenuItem({ name, href }: { name: string; href: string }) {
   return (
     <Link
       href={href}
-      className="hover:underline text-[#345995]  dark:text-white"
+      className="hover:underline text-[#345995]  dark:text-white text-sm"
     >
       {name}
     </Link>
