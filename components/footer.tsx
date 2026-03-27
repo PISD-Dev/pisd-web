@@ -12,7 +12,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-amber-50 p-5 px-8 flex flex-col gap-5 md:px-20 md:py-10 text-[#345995]  dark:text-white">
+    <footer className="bg-[#eaf2ff] p-5 px-8 flex flex-col gap-5 md:px-20 md:py-10 text-[#345995]  dark:text-white">
       <div className="my-auto ">
         <PISD_Logo width={300} className="" />
       </div>
@@ -29,7 +29,7 @@ export default function Footer() {
           </Link>
         </div>
 
-        <div className="flex flex-col md:bg-amber-300 items-start gap-3 py-2 md:grid md:grid-rows-4 md:grid-flow-col md:gap-2 lg:gap-x-10 md:auto-cols-max md:justify-start">
+        <div className="flex flex-col  items-start gap-3 py-2 md:grid md:grid-rows-4 md:grid-flow-col md:gap-2 lg:gap-x-10 md:auto-cols-max md:justify-start">
           <FooterMenuItem name="Home" href="/" />
           <FooterMenuItem name="About Us" href="/about_us" />
           <FooterMenuItem name="What We Do" href="/what_we_do" />

@@ -10,18 +10,25 @@ export default function ProjectDescriptionWidget({
   description: string;
 }) {
   return (
-    <div className="flex flex-col p-5 w-80">
-      <Image
-        src={imageLink}
-        alt={alt_text}
-        objectFit="cover"
-        width={350}
-        height={350}
-        loading="lazy"
-        className="px-3 "
-      />
-      <Separator className="my-4" />
-      <div className="line-clamp-4">{description}</div>
+
+    <div className="flex flex-col ">
+      <div className="relative  h-90 ">
+        <Image
+          src={imageLink}
+          alt={alt_text}
+          fill
+          className="object-cover "
+          loading="lazy"
+        />
+
+  
+        <div className="absolute inset-0 bg-linear-to-r from-black/70 via-black/50 via-50% to-transparent px-3" />
+
+        <div className="absolute bottom-3 left-3 right-3 text-white text-sm">
+          {description}
+        </div>
+      </div>
+
     </div>
   );
 }
