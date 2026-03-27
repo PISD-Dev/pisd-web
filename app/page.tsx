@@ -16,8 +16,7 @@ export default function Home() {
         <NavSideBar />
         <NavBar />
         <div className="bg-[#345995] text-white py-2 text-center text-xl md:py-3 md-">
-          Lorem Ipsum Dolor
-        </div>
+          Student Power is People Power     </div>
 
         <div
           className="relative flex-1 bg-cover bg-center "
@@ -38,11 +37,12 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-[#345995] text-white w-full px-20 py-3 flex flex-col items-center">
-        <div className="text-center text-xl font-bold">
+      <div className="flex flex-col bg-[#345995] text-white w-full px-10 md:px-20 py-10  items-center">
+        <div className="text-center text-xl font-bold ">
           君と相場がゾキュンドキュン走り出し。
         </div>
-        <div className="flex flex-row  gap-5">
+
+        <div className="w-full py-10 flex flex-col md:flex-row gap-5">
           <ProjectDescriptionWidget
             alt_text="Image of EDSA Monument"
             description="これから先のもっと先を描いた地図はないんだろうか? 迷いはしないだろうか それでいいから そのままでいいから本はいらなかったものもソファも本も捨てよう Ooh hoo ah ah 町へ出よう"
@@ -150,5 +150,3 @@ export default function Home() {
     </main>
   );
 }
-
-
