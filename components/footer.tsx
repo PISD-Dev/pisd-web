@@ -21,12 +21,7 @@ export default function Footer() {
           <div className="font-bold md:text-lg lg:text-xl ">
             Philippine Insititute for Student Democracy (PISD) Inc.
           </div>
-          <Link
-            href={"#who-we-are"}
-            className="hover:underline text-[#345995]  dark:text-white"
-          >
-            About the PISD&apos;s Mission
-          </Link>
+
         </div>
 
         {/*<div className="flex flex-col  items-start gap-3 py-2 md:grid md:grid-rows-4 md:grid-flow-col md:gap-2 lg:gap-x-10 md:auto-cols-max md:justify-start">
@@ -36,7 +31,7 @@ export default function Footer() {
           <FooterMenuItem name="Where We Work" href="/where_we_work" />
           <FooterMenuItem name="Contact Us" href="/contact_us" />
         </div>*/}
-        <div className="  text-[#697c9d] flex flex-col gap-2 pt-10  md:pt-0">
+        <div className="  text-[#697c9d] flex flex-col gap-2 ">
           <div className="font-bold">Follow us:</div>
           <div className="flex flex-row gap-2">
             <a

@@ -32,11 +32,11 @@ export default function Home() {
 
           <div className="absolute z-10 h-full w-full content-end text-white p-10">
             <div className="flex flex-col md:flex-row gap-5 justify-center ">
-              <Button className="flex items-center gap-2 rounded-4xl bg-[#9B2242] hover:bg-[#741a32] text-md md:text-xl  py-3 md:py-6">
+              <Button className=" hover:cursor-pointer flex items-center gap-2 rounded-4xl bg-[#9B2242] hover:bg-[#741a32] text-md md:text-xl  py-3 md:py-6">
                 <IconEmpathize className="w-5 h-5 md:w-6 md:h-6 shrink-0" />
                 <span>Be a Volunteer</span>
               </Button>
-              <Button className="flex items-center gap-2 rounded-4xl bg-[#F2CD00] text-black hover:bg-[#caac01] text-md md:text-xl px-5 py-3 md:py-6">
+              <Button className="hover:cursor-pointer flex items-center gap-2 rounded-4xl bg-[#F2CD00] text-black hover:bg-[#caac01] text-md md:text-xl px-5 py-3 md:py-6">
                 <Icon_PHP_donate className="w-5 h-5 md:w-6 md:h-6 shrink-0" />
                 <span>Be a Donor</span>
               </Button>
@@ -46,7 +46,7 @@ export default function Home() {
       </div>
 
       <section
-        id="who-are-we"
+        id="what-we-do"
         className="flex flex-col bg-[#345995] text-white w-full  p-10  items-center"
       >
         <div className="text-center text-xl font-bold md:text-4xl">
@@ -141,124 +141,126 @@ export default function Home() {
           democratic rights and freedoms and advances student democracy.
         </p>
       </section>*/}
+      <section id="more_info">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-5">
+          <div className="  flex flex-col align items-center gap-3 px-8">
+            <div className="text-[#345995] font-bold text-2xl">WHO ARE WE?</div>
+            <div className="flex gap-5 ">
+              <div className="flex-1 text-center">
+                The Philippine Institute for Student Democracy (PISD) Inc. is a
+                SEC-registered, non-stock, non-profit, and non-partisan research
+                institute that promotes and protects students&apos; democratic
+                rights and freedoms and advances student democracy.
+              </div>
+            </div>
+          </div>
+          <div className=" flex flex-col  align items-center gap-3 ">
+            <div className="text-[#345995] font-bold text-2xl">
+              FEATURED PHOTOS
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-5">
+              <div className="w-100 h-80 md:w-40 md:h-40 relative shrink-0">
+                <Image
+                  src="/img/feat_1v2.jpg"
+                  alt="PISD at September 21 Protest"
+                  fill
+                  className="object-cover rounded-lg object-[53%_50%]"
+                  loading="lazy"
+                />
+              </div>
+              <div className="w-100 h-80 md:w-40 md:h-40 relative shrink-0">
+                <Image
+                  src="/img/feat_2.jpg"
+                  alt="PISD at September 21 Protest"
+                  fill
+                  className="object-cover rounded-lg object-[53%_50%]"
+                  loading="lazy"
+                />
+              </div>
+              <div className="w-100 h-80 md:w-40 md:h-40 relative shrink-0">
+                <Image
+                  src="/img/feat_3.jpg"
+                  alt="UPOU Town Hall"
+                  fill
+                  className="object-cover rounded-lg object-[50%_0%]"
+                  loading="lazy"
+                />
+              </div>
+              <div className="w-100 h-80 md:w-40 md:h-40 relative shrink-0">
+                <Image
+                  src="/img/placard_photo.jpg"
+                  alt="40th People Power Anniv"
+                  fill
+                  className="object-cover rounded-lg object-[50%_0%]"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+          <div className=" flex flex-col  align items-center gap-3 px-8">
+            <div className="text-[#345995] font-bold text-2xl">
+              WHO DO WE WORK WITH?
+            </div>
+            <div className="flex gap-5 ">
+              <div className="flex-1 text-center">
+                We believe that student democracy is fundamental to nation
+                building and to that end we work with the four pillars of
+                student democracy, namely, Student Governments, Student
+                Publications, Student Electoral Boards, and Student
+                Organizations.
+              </div>
+            </div>
+          </div>
+          <div className=" flex flex-col items-center text-center gap-4 px-8 rounded-2xl">
+            <h2 className="text-[#345995] font-bold text-2xl">
+              LET&apos;S CONNECT!
+            </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-5">
-        <div className="  flex flex-col align items-center gap-3 px-8">
-          <div className="text-[#345995] font-bold text-2xl">WHO ARE WE?</div>
-          <div className="flex gap-5 ">
-            <div className="flex-1 text-center">
-              The Philippine Institute for Student Democracy (PISD) Inc. is a
-              SEC-registered, non-stock, non-profit, and non-partisan research
-              institute that promotes and protects students&apos; democratic
-              rights and freedoms and advances student democracy.
-            </div>
-          </div>
-        </div>
-        <div className=" flex flex-col  align items-center gap-3 ">
-          <div className="text-[#345995] font-bold text-2xl">
-            FEATURED PHOTOS
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-5">
-            <div className="w-100 h-80 md:w-40 md:h-40 relative shrink-0">
-              <Image
-                src="/img/feat_1v2.jpg"
-                alt="PISD at September 21 Protest"
-                fill
-                className="object-cover rounded-lg object-[53%_50%]"
-                loading="lazy"
-              />
-            </div>
-            <div className="w-100 h-80 md:w-40 md:h-40 relative shrink-0">
-              <Image
-                src="/img/feat_2.jpg"
-                alt="PISD at September 21 Protest"
-                fill
-                className="object-cover rounded-lg object-[53%_50%]"
-                loading="lazy"
-              />
-            </div>
-            <div className="w-100 h-80 md:w-40 md:h-40 relative shrink-0">
-              <Image
-                src="/img/feat_3.jpg"
-                alt="UPOU Town Hall"
-                fill
-                className="object-cover rounded-lg object-[50%_0%]"
-                loading="lazy"
-              />
-            </div>
-            <div className="w-100 h-80 md:w-40 md:h-40 relative shrink-0">
-              <Image
-                src="/img/placard_photo.jpg"
-                alt="40th People Power Anniv"
-                fill
-                className="object-cover rounded-lg object-[50%_0%]"
-                loading="lazy"
-              />
-            </div>
-          </div>
-        </div>
-        <div className=" flex flex-col  align items-center gap-3 px-8">
-          <div className="text-[#345995] font-bold text-2xl">
-            WHO DO WE WORK WITH?
-          </div>
-          <div className="flex gap-5 ">
-            <div className="flex-1 text-center">
-              We believe that student democracy is fundamental to nation
-              building and to that end we work with the four pillars of student
-              democracy, namely, Student Governments, Student Publications,
-              Student Electoral Boards, and Student Organizations.
-            </div>
-          </div>
-        </div>
-        <div className=" flex flex-col items-center text-center gap-4 px-8 rounded-2xl">
-          <h2 className="text-[#345995] font-bold text-2xl">
-            LET&apos;S CONNECT!
-          </h2>
+            <p className="text-sm max-w-sm text-[#345995]/80">
+              Reach out to collaborate, ask questions, or learn more about what
+              we do.
+            </p>
 
-          <p className="text-sm max-w-sm text-[#345995]/80">
-            Reach out to collaborate, ask questions, or learn more about what we
-            do.
-          </p>
-
-          <Button
-            asChild
-            size="sm"
-            className="bg-[#345995] text-white hover:bg-[#2a4777] text-md px-6 py-2 rounded-lg"
-          >
-            <Link href="mailto:info@pisd.org.ph">Contact Us</Link>
-          </Button>
-
-          <div className="flex gap-4 pt-2 text-[#345995]">
-            <a
-              href="https://www.facebook.com/pisdofficial"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group w-6 h-6 flex items-center justify-center"
+            <Button
+              asChild
+              size="sm"
+              className="bg-[#345995] text-white hover:bg-[#2a4777] text-md px-6 py-2 rounded-lg"
             >
-              <IconBrandFacebook className="group-hover:hidden " />
-              <IconBrandFacebookFilled className="hidden group-hover:inline " />
-            </a>
+              <Link href="mailto:info@pisd.org.ph">Contact Us</Link>
+            </Button>
 
-            <a
-              href="mailto:info@pisd.org.ph"
-              className="group w-6 h-6 flex items-center justify-center"
-            >
-              <IconMail className="group-hover:hidden" />
-              <IconMailFilled className="hidden group-hover:inline " />
-            </a>
+            <div className="flex gap-4 pt-2 text-[#345995]">
+              <a
+                href="https://www.facebook.com/pisdofficial"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group w-6 h-6 flex items-center justify-center"
+              >
+                <IconBrandFacebook className="group-hover:hidden " />
+                <IconBrandFacebookFilled className="hidden group-hover:inline " />
+              </a>
 
-            <a
-              href="https://www.linkedin.com/company/pisdofficial/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group w-6 h-6 flex items-center justify-center"
-            >
-              <IconBrandLinkedin className="group-hover:hidden" />
-              <IconBrandLinkedinFilled className="hidden group-hover:inline " />
-            </a>
+              <a
+                href="mailto:info@pisd.org.ph"
+                className="group w-6 h-6 flex items-center justify-center"
+              >
+                <IconMail className="group-hover:hidden" />
+                <IconMailFilled className="hidden group-hover:inline " />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/company/pisdofficial/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group w-6 h-6 flex items-center justify-center"
+              >
+                <IconBrandLinkedin className="group-hover:hidden" />
+                <IconBrandLinkedinFilled className="hidden group-hover:inline " />
+              </a>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
   );
 }
