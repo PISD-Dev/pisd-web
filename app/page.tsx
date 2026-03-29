@@ -47,13 +47,13 @@ export default function Home() {
 
       <section
         id="what-we-do"
-        className="flex flex-col bg-[#345995] text-white w-full  p-10  items-center"
+        className="flex flex-col bg-[#345995] text-white w-full  py-10  items-center"
       >
         <div className="text-center text-xl font-bold md:text-4xl">
           WHAT WE DO
         </div>
 
-        <div className="grid  gap-5 py-5 px-10 md:px-0 md:grid-cols-3 md:gap-20">
+        <div className="grid  gap-5 py-5 md:px-5 md:grid-cols-3 md:gap-5 lg:gap-10 ">
           <InfoCard
             imageSrc="/img/voter_ed_v2.jpg"
             alt="balota group picture"
@@ -81,66 +81,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/*<section id="what-we-do" className="flex flex-col bg-[#47A23F] text-white w-full px-10 md:px-20 py-10  items-center">
-        <div className="text-center text-xl font-bold ">WHAT WE DO</div>
-        <div className="text-left md:mx-10 lg:mx-40 text-lg space-y-6">
-          <div>
-            <h3 className="font-semibold text-xl">Voter Education</h3>
-            <p>
-              This year, our top priority is empowering first-time student
-              voters aged 15–24 in the upcoming BSKE in November 2026.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-xl">Research & Data</h3>
-            <p>
-              We conduct research on critical issues like voter turnout and
-              sentiment analysis to understand how they affect student
-              participation in our democracy.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-xl">Tech & Tools</h3>
-            <p>
-              We don&apos;t just study problems—we build apps and digital tools
-              to make advocacy and democratic engagement easier. Like
-              Nosibalasi, which reached over 700k users in the last midterm
-              elections.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section id="work-with" className="flex flex-col bg-[#9B2242] text-white w-full px-10 md:px-20 py-10  items-center">
-        <div className="text-center text-xl font-bold ">
-          WHO DO WE WORK WITH?
-        </div>
-        <div className="text-center md:mx-10 lg:mx-40 text-lg">
-          <p>
-            We believe that student democracy is fundamental to nation building
-            and to that end we work with the four pillars of student democracy
-            namely: Student Governments, Student Publications, Student Electoral
-            Boards, Student Organizations.
-          </p>
-          <p>
-            We also work directly with Student Affairs Offices as well as Social
-            Action Offices alongside other youth organizations outside of
-            schools, LYDO, LYDC, SK, and even government agencies.
-          </p>
-        </div>
-      </section>
-      <section id="why-pisd" className="flex flex-col bg-[#CCB11D] text-white w-full px-10 md:px-20 py-10  items-center">
-        <div className="text-center text-xl font-bold ">
-          WHY DID WE ESTABLISH PISD?
-        </div>
-        <p className="text-center md:mx-10 lg:mx-40 text-lg">
-          We are the Philippine Institute for Student Democracy (PISD) Inc. We
-          are an SEC-registered, non-stock, non-profit, and non-partisan
-          research institute that promotes and protects students&apos;
-          democratic rights and freedoms and advances student democracy.
-        </p>
-      </section>*/}
+      
       <section id="more_info">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-5">
           <div className="  flex flex-col align items-center gap-3 px-8">
@@ -158,43 +99,28 @@ export default function Home() {
             <div className="text-[#345995] font-bold text-2xl">
               FEATURED PHOTOS
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-5">
-              <div className="w-100 h-80 md:w-40 md:h-40 relative shrink-0">
-                <Image
-                  src="/img/feat_1v2.jpg"
-                  alt="PISD at September 21 Protest"
-                  fill
-                  className="object-cover rounded-lg object-[53%_50%]"
-                  loading="lazy"
-                />
-              </div>
-              <div className="w-100 h-80 md:w-40 md:h-40 relative shrink-0">
-                <Image
-                  src="/img/feat_2.jpg"
-                  alt="PISD at September 21 Protest"
-                  fill
-                  className="object-cover rounded-lg object-[53%_50%]"
-                  loading="lazy"
-                />
-              </div>
-              <div className="w-100 h-80 md:w-40 md:h-40 relative shrink-0">
-                <Image
-                  src="/img/feat_3.jpg"
-                  alt="UPOU Town Hall"
-                  fill
-                  className="object-cover rounded-lg object-[50%_0%]"
-                  loading="lazy"
-                />
-              </div>
-              <div className="w-100 h-80 md:w-40 md:h-40 relative shrink-0">
-                <Image
-                  src="/img/placard_photo.jpg"
-                  alt="40th People Power Anniv"
-                  fill
-                  className="object-cover rounded-lg object-[50%_0%]"
-                  loading="lazy"
-                />
-              </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 w-full max-w-6xl mx-auto">
+              {[
+                {
+                  src: "/img/feat_1v2.jpg",
+                  alt: "PISD at September 21 Protest",
+                },
+                { src: "/img/feat_2.jpg", alt: "PISD at September 21 Protest" },
+                { src: "/img/feat_3.jpg", alt: "UPOU Town Hall" },
+                {
+                  src: "/img/placard_photo.jpg",
+                  alt: "40th People Power Anniv",
+                },
+              ].map((img, i) => (
+                <div key={i} className="relative w-full aspect-4/3 md:aspect-square bg-bl">
+                  <Image
+                    src={img.src}
+                    alt={img.alt}
+                    fill
+                    className="object-cover rounded-lg"
+                  />
+                </div>
+              ))}
             </div>
           </div>
           <div className=" flex flex-col  align items-center gap-3 px-8">
@@ -221,7 +147,7 @@ export default function Home() {
               we do.
             </p>
 
-            <Button
+            <Button 
               asChild
               size="sm"
               className="bg-[#345995] text-white hover:bg-[#2a4777] text-md px-6 py-2 rounded-lg"
@@ -277,14 +203,14 @@ function InfoCard({
   description: string;
 }) {
   return (
-    <div className="flex flex-col items-center">
-      <div className="w-100 md:w-50 lg:w-80">
-        <div className="relative h-100 md:h-50 lg:h-80 shrink-0">
+    <div className="flex flex-col items-center w-full max-w-md mx-auto  px-5">
+
+        <div className="relative w-full md:aspect-4/3 aspect-square">
           <Image
             src={imageSrc}
             alt={alt}
             fill
-            className="object-cover rounded-lg object-[50%_80%]"
+            className="object-cover rounded-lg object-[50%_80%] aspect-4/3 md:aspect-square "
             loading="lazy"
           />
         </div>
@@ -293,7 +219,7 @@ function InfoCard({
           <h3 className="font-semibold text-xl">{title}</h3>
           <p className="md:text-sm">{description}</p>
         </div>
-      </div>
+      
     </div>
   );
 }
