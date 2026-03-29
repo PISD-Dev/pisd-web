@@ -16,13 +16,14 @@ import { IconMenu2 } from "@tabler/icons-react";
 
 export default function NavSideBar() {
   return (
-    <div className=" md:hidden flex  gap-5 px-5 py-3  justify-between items-center">
+    <div className=" md:hidden flex  gap-5 px-5 py-3   justify-center">
       <Link href="/">
         <PISD_Logo
           width={150}
           className="text-[#345995] dark:text-white cursor-pointer"
         />
       </Link>
+      {/*
       <Drawer direction="right">
         <DrawerTrigger asChild>
           <Button variant="outline" size="icon">
@@ -44,7 +45,7 @@ export default function NavSideBar() {
 
           <DrawerFooter></DrawerFooter>
         </DrawerContent>
-      </Drawer>
+      </Drawer>*/}
     </div>
   );
 }

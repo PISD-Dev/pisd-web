@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Separator } from "./ui/separator";
 export default function ProjectDescriptionWidget({
   alt_text,
   imageLink,
