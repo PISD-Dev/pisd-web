@@ -16,27 +16,27 @@ export default function Footer() {
       <div className="my-auto ">
         <PISD_Logo width={300} className="" />
       </div>
-      <div className="md:gap-10 md:grid md:grid-cols-[2fr_3fr_1fr]  lg:grid-cols-[1.5fr_3fr_1fr]">
+      <div className="md:gap-10 flex flex-col">
         <div className="pb-10 flex flex-col gap-5">
           <div className="font-bold md:text-lg lg:text-xl ">
             Philippine Insititute for Student Democracy (PISD) Inc.
           </div>
           <Link
-            href={"/about"}
+            href={"#who-we-are"}
             className="hover:underline text-[#345995]  dark:text-white"
           >
             About the PISD&apos;s Mission
           </Link>
         </div>
 
-        <div className="flex flex-col  items-start gap-3 py-2 md:grid md:grid-rows-4 md:grid-flow-col md:gap-2 lg:gap-x-10 md:auto-cols-max md:justify-start">
+        {/*<div className="flex flex-col  items-start gap-3 py-2 md:grid md:grid-rows-4 md:grid-flow-col md:gap-2 lg:gap-x-10 md:auto-cols-max md:justify-start">
           <FooterMenuItem name="Home" href="/" />
           <FooterMenuItem name="About Us" href="/about_us" />
           <FooterMenuItem name="What We Do" href="/what_we_do" />
           <FooterMenuItem name="Where We Work" href="/where_we_work" />
           <FooterMenuItem name="Contact Us" href="/contact_us" />
-        </div>
-        <div className="  text-[#697c9d] flex flex-col gap-2 pt-10 md:items-center justify-center md:justify-start md:pt-0">
+        </div>*/}
+        <div className="  text-[#697c9d] flex flex-col gap-2 pt-10  md:pt-0">
           <div className="font-bold">Follow us:</div>
           <div className="flex flex-row gap-2">
             <a

@@ -13,9 +13,10 @@ export default function NavBar() {
       </Link>
       <nav className="flex gap-6 px-10  text-[#345995] dark:text-white ">
         <MenuItem name="Home" href="/" />
-        <MenuItem name="About Us" href="/about_us" />
-        <MenuItem name="What We Do" href="/what_we_do" />
-        <MenuItem name="Where We Work" href="/where_we_work" />
+        <MenuItem name="Who We Are" href="#who-are-we" />
+        <MenuItem name="What We Do" href="#what-we-do" />
+        <MenuItem name="Our Partners" href="#work-with" />
+        <MenuItem name="Why we Exist" href="#why-pisd" />
         <MenuItem name="Contact Us" href="/contact_us" />
       </nav>
     </div>
