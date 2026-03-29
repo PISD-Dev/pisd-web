@@ -18,10 +18,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Philippine Institute for Student Democracy (PISD) Inc.",
   openGraph: {
-    title: "PISD Website",
+    title: "Philippine Institute for Student Democracy (PISD) Inc.",
     description: "Official website of PISD",
     url: "https://pisd.org.ph/",
-    siteName: "PISD",
+    siteName: "PISD Official Website",
     images: [
       {
         url: "/img/placard_photo.jpg", // must be in /public
