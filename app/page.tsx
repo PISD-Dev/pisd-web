@@ -26,7 +26,7 @@ export default function Home() {
 
         <div
           className="relative flex-1 bg-cover bg-center "
-          style={{ backgroundImage: "url(/img/home-hero.JPG)" }}
+          style={{ backgroundImage: "url(/img/home-hero.jpg)" }}
         >
           <div className="absolute inset-0 bg-black/30"></div>
 
