@@ -17,7 +17,22 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Philippine Institute for Student Democracy (PISD) Inc.",
-  description: "An SEC registered, Non-Governmental Organization.",
+  openGraph: {
+    title: "PISD Website",
+    description: "Official website of PISD",
+    url: "https://pisd.org.ph/",
+    siteName: "PISD",
+    images: [
+      {
+        url: "/img/placard_photo.jpg", // must be in /public
+        width: 1200,
+        height: 630,
+        alt: "PISD Preview",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
