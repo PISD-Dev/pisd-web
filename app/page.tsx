@@ -26,7 +26,7 @@ export default function Home() {
 
         <div
           className="relative flex-1 bg-cover bg-center "
-          style={{ backgroundImage: "url(/img/home-hero.JPG)" }}
+          style={{ backgroundImage: "url(/img/home-hero-image.jpg)" }}
         >
           <div className="absolute inset-0 bg-black/30"></div>
 
@@ -55,7 +55,7 @@ export default function Home() {
 
         <div className="grid  gap-5 py-5 px-10 md:px-0 md:grid-cols-3 md:gap-20">
           <InfoCard
-            imageSrc="/img/voter_ed.jpg"
+            imageSrc="/img/voter_ed_v2.jpg"
             alt="balota group picture"
             title="Voter Education"
             description="This year, our top priority is empowering first-time student
@@ -161,7 +161,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-5">
             <div className="w-100 h-80 md:w-40 md:h-40 relative shrink-0">
               <Image
-                src="/img/feat_1.jpg"
+                src="/img/feat_1v2.jpg"
                 alt="PISD at September 21 Protest"
                 fill
                 className="object-cover rounded-lg object-[53%_50%]"
@@ -188,7 +188,7 @@ export default function Home() {
             </div>
             <div className="w-100 h-80 md:w-40 md:h-40 relative shrink-0">
               <Image
-                src="/img/sp_pp.jpg"
+                src="/img/placard_photo.jpg"
                 alt="40th People Power Anniv"
                 fill
                 className="object-cover rounded-lg object-[50%_0%]"
