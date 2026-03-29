@@ -188,7 +188,7 @@ export default function Home() {
             </div>
             <div className="w-100 h-80 md:w-40 md:h-40 relative shrink-0">
               <Image
-                src="/img/sp_pp.jpg"
+                src="/img/placard_photo.jpg"
                 alt="40th People Power Anniv"
                 fill
                 className="object-cover rounded-lg object-[50%_0%]"
