@@ -147,7 +147,7 @@ export default function Home() {
               we do.
             </p>
 
-            <Button max-w-6xl mx-auto
+            <Button 
               asChild
               size="sm"
               className="bg-[#345995] text-white hover:bg-[#2a4777] text-md px-6 py-2 rounded-lg"
